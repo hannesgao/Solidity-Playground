@@ -11,7 +11,7 @@ contract MyToken is ERC20Capped, ERC20Burnable {
     constructor(
         uint256 cap,
         uint256 reward
-    ) ERC20("MyToken", "MYT") ERC20Capped(cap * (10 ** decimals())) {
+    ) ERC20("KITKryptoDAOGovToken", "KKDGT") ERC20Capped(cap * (10 ** decimals())) {
         owner = payable(msg.sender);
         _mint(owner, 50000000 * (10 ** decimals()));
         blockReward = reward * (10 ** decimals()); // Setting block reward for first deploy
